@@ -669,3 +669,20 @@ ul.logo-list li::before {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.logo-title {
+  display: flex;
+  align-items: top;
+  gap: 0.7rem;
+}
+
+.logo-title img {
+  height: 40px;
+  width: auto;
+}
+
+@media(max-width: 600px) {
+  .logo-title img {
+    height: 30px;
+  }
+}
