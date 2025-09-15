@@ -516,6 +516,12 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+.work__image {
+    max-width: 600px;
+    max-height: 600px;
+    padding-right: 20px;
+}
+
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
