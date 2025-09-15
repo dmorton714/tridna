@@ -353,16 +353,21 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media (max-width: 500px) {
-  .nav {
-    flex-direction: column;     /* stack logo + links */
-    align-items: center;        /* center horizontally */
-  }
-
   .nav__items {
-    flex-direction: column;     /* stack links */
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-top: 0.5rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav__link {
+    text-align: center;
+    width: 100%;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 0;
   }
 }
 
@@ -423,7 +428,7 @@ body:not(.user-is-tabbing) a:focus {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     font-size: var(--font-size-normal);
 }
 
