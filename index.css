@@ -452,9 +452,12 @@ body:not(.user-is-tabbing) a:focus {
         background-position: center;
     }
 
-    .header__text p {
-        transform: scale(.8);
-    }
+    .header__text {
+    position: static;   /* remove absolute positioning */
+    transform: none;    /* reset */
+    margin-top: 2rem;   /* add some spacing below the nav */
+    text-align: center;
+  }
 }
 
 /* --------------------------------------- */
